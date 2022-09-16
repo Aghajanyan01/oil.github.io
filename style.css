@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 1s;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 10%;
+    border: 3px groove gold;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background: black;
+}
+.ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px groove white;
+    background: linear-gradient(to right bottom,gold, transparent,rgba(133, 115, 75, 0.646));
+    color: gold;
+    font-family: cursive;
+    animation: anun 2.5s linear infinite;
+    list-style-type: none;
+    box-shadow: 0px 0px 15px 1px gold;
+    cursor: pointer;
+}
+@keyframes anun {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+        color:white;
+        box-shadow: 0px 0px 15px 1px white;
+        border: 1px groove gold;
+    }
+
+}
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('1.jpg');
+    background-size: cover;
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+aside{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.386);
+    border: none;
+    box-shadow: 0px  0px 25px 3px wheat;
+    color: wheat;
+    font-style: italic;
+    font-family: cursive;
+    text-shadow: 0px 0px 15px wheat;
+    font-size: 27px;
+    text-align: center;
+}
+#result{
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.386);
+    border: none;
+    box-shadow: 0px  0px 25px 3px wheat;
+    color: rgb(255, 136, 0);
+    font-style: italic;
+    font-family: cursive;
+    text-shadow: 0px 0px 15px wheat;
+    font-size: 27px;
+    animation: anun1 2.5s linear infinite;
+    text-align: center;
+}
+@keyframes anun1 {
+    0%,100%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+}   
+.p{
+    font-size: 40px;
+    color: wheat;
+    text-shadow: 0px 0px 15px wheat;
+    position: absolute;
+    top: 530px;
+    left:  32%;
+    animation: anun2 4s linear infinite;
+}
+.pc{
+    font-size: 40px;
+    color: wheat;
+    text-shadow: 0px 0px 15px wheat;
+    position: absolute;
+    top: 470px;
+    left:  40%;
+    font-style: italic;
+}
+@keyframes anun2 {
+    0%,100%{
+        transform: scale(1.2) rotate(180deg);
+    }
+    50%{
+        transform: scale(1) rotate(180deg);
+        text-shadow: 0px 0px 15px red;
+    } 
+}
+.s1{
+    top: 640px;
+}
+
+section{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+nav{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+}
+.slider{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button1{
+    background-color: rgba(0, 0, 0, 0.647);
+    color: tan;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 7px 15px;
+    border-radius: 25px;
+    border: 4px groove tan;
+    cursor: pointer;
+    position: absolute;
+    /* animation: anun 3s infinite linear; */
+}
+#left{
+    left: 350px;
+    top: 350px;
+}
+#right{
+    top: 350px;
+    right: 350px;
+} 
